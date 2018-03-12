@@ -1,11 +1,8 @@
 
 IMAGE_NAME = tkp/java/8
+REGISTRY = registry.it.taikang.com
 
 .PHONY: build
 build:
 	docker build -t $(IMAGE_NAME) .
-
-.PHONY: test
-test:
-	docker build -t $(IMAGE_NAME)-candidate .
-	IMAGE_NAME=$(IMAGE_NAME)-candidate test/run
+	docker tag $(IMAGE_NAME) $(REGISTRY)/$(IMAGE_NAME)
