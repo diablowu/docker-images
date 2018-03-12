@@ -1,0 +1,8 @@
+#!/bin/bash -e
+cat <<EOF
+usage:
+
+s2i build <source code path/URL> tkp/java/8 <application image>
+
+docker run <application image>
+EOF
