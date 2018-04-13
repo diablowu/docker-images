@@ -1,4 +1,4 @@
-FROM registry.it.taikang.com/tkp/base/centos-base
+FROM tkp/base/centos-base
 
 # MAINTAINER WuBo <wubo19842008@gmail.com>
 
