@@ -1,4 +1,4 @@
-FROM tkp/base/centos-java
+FROM registry.cn-beijing.aliyuncs.com/tkp/centos-java
 
 # MAINTAINER WuBo <wubo19842008@gmail.com>
 

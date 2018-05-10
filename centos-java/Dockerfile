@@ -1,4 +1,4 @@
-FROM tkp/base/centos-base
+FROM registry.cn-beijing.aliyuncs.com/tkp/centos-base
 
 # MAINTAINER WuBo <wubo19842008@gmail.com>
 
