@@ -1,4 +1,4 @@
-FROM tkp/base/centos:centos7
+FROM centos:centos7
 
 # MAINTAINER WuBo <wubo19842008@gmail.com>
 
