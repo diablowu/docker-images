@@ -19,7 +19,7 @@ ENV JVM_ARGS="${JVM_ARGS} -Djava.net.preferIPv4Stack=true -XX:+AlwaysPreTouch"
 
 
 COPY --from=dl /tmp/apache-jmeter-${JMETER_VERSION}.tgz /tmp/apache-jmeter-${JMETER_VERSION}.tgz
-ADD entry.sh /entry.sh
+ADD jmeter/entry.sh /entry.sh
 RUN tar -xzf /tmp/apache-jmeter-${JMETER_VERSION}.tgz -C /app/jmeter --strip-components=1 \
     && rm -f /tmp/apache-jmeter-${JMETER_VERSION}.tgz \
     && chmod 771 -R /app/jmeter \
